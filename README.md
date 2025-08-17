@@ -28,16 +28,18 @@ Timestamped results
 
 Usage Examples:  (BASH)
 # Scan a single host
-python network_probe.py -t 192.168.1.100
+python network_probe.py -t {ip_address}
+or
+python network_probe.py -t {ip_address}
 
 # Scan an entire network
-python network_probe.py -n 192.168.1.0/24
+python network_probe.py -n {ip_address}/24
 
 # Just do a ping sweep
-python network_probe.py -n 192.168.1.0/24 --ping-only
+python network_probe.py -n {ip_address}/24 --ping-only
 
 # Save results to file
-python network_probe.py -t 192.168.1.100 -o scan_results.json
+python network_probe.py -t {ip_address} -o scan_results.json
 
 
 Important Security Notes:
